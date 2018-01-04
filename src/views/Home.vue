@@ -72,6 +72,7 @@
 </template>
 
 <script>
+	import imags from '../assets/dog.jpg'
     export default {
         data() {
             return {
@@ -127,7 +128,7 @@
             if (user) {
                 user = JSON.parse(user);
                 this.sysUserName = user.name || '';
-                this.sysUserAvatar = user.avatar || '';
+                this.sysUserAvatar = imags;
             }
         }
     }
